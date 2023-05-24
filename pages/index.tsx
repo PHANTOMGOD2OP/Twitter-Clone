@@ -8,6 +8,7 @@ export default function Home() {
       <Header label="Home" />
       <Form placeholder="What's happening?" />
       <PostFeed />
+     console.log("db", process.env.DATABASE_URL)
     </>
   )
 }
