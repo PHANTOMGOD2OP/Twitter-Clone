@@ -10,8 +10,11 @@ export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     CredentialsProvider({
-      name: 'credentials',
       credentials: {
+        name: {
+          label:'Name',
+          type:'text',
+        },
         email: { label: 'email', type: 'text' },
         password: { label: 'password', type: 'password' }
       },
